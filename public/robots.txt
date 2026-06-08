@@ -1,0 +1,13 @@
+# danilzanozin.dev
+User-agent: *
+Allow: /
+
+# AI crawlers welcome — see /llms.txt for a structured summary
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://danilzanozin.dev/sitemap.xml

@@ -1,0 +1,23 @@
+# Danil Zanozin
+
+> ML / AI Engineer focused on applied LLM agent safety, production AI systems, and quantitative research. This is his personal site and portfolio at danilzanozin.dev.
+
+Danil Zanozin is an ML / AI Engineer. He sole-built Traciora, a production AI customer-operations platform, and sole-authored a manuscript on PII virtualization for LLM tool-calling agents (under review). He also builds systematic quantitative-trading systems. Education: B.S. Computer Science, Minors in Cybersecurity and Mathematics (California State University Channel Islands); incoming M.S. (Fall 2026).
+
+## Work
+- [Traciora](https://traciora.com): AI customer-operations platform — analyzes customer phone calls, handles routine ops, and answers from a complete picture of the business. Founder & sole engineer.
+- [Kadabra](https://danilmezor.github.io/capstone-2026/): end-to-end systematic crypto trading framework with live execution and a multi-test robustness gate (live strategies).
+- [TradingView Indicators](https://www.tradingview.com/u/mezor13/): curated Pine Script trading indicators and market features used daily by 1000+ traders.
+
+## Research
+- PII Virtualization: Reconciling Data Privacy and Tool-Calling Utility in LLM Agents — sole author, under review. A reversible session-scoped tokenization layer that cuts raw PII sent to external model providers to near-zero with no loss of tool-calling utility.
+- Agentic AI for Autonomous Cyber Defense — co-author, in preparation. Constrained-POMDP formalization with a NIST CSF-aligned staged-autonomy taxonomy.
+
+## Links
+- [GitHub](https://github.com/danilmezor)
+- [LinkedIn](https://www.linkedin.com/in/danil-zanozin-603878199/)
+- [TradingView](https://www.tradingview.com/u/mezor13/)
+- [Photography portfolio](https://danilzanozin.com)
+
+## Contact
+- Email: danil.zanozin@gmail.com
