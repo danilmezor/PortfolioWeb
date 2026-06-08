@@ -1,0 +1,213 @@
+%-------------------------
+% Danil Zanozin — General Résumé (one-size-fits-all, public/web version)
+% Phone number intentionally omitted for public hosting.
+% Based off of: https://github.com/sb2nov/resume  (MIT)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Danil Zanozin} \\ \vspace{2pt}
+    \small \href{mailto:danil.zanozin@gmail.com}{\underline{danil.zanozin@gmail.com}} $|$
+    \href{https://linkedin.com/in/danil-zanozin-603878199}{\underline{linkedin.com/in/danil}} $|$
+    \href{https://github.com/danilmezor}{\underline{github.com/danilmezor}} $|$
+    \href{https://danilzanozin.dev}{\underline{danilzanozin.dev}} $|$
+    \href{https://traciora.com}{\underline{traciora.com}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {California State University Channel Islands}{Camarillo, CA}
+      {Bachelor of Science in Computer Science, Minors in Cybersecurity and Mathematics}{Sep. 2024 -- May 2026}
+      \resumeItemListStart
+        \resumeItem{Incoming M.S. student at CSUCI -- starting \textbf{Fall 2026}}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Santa Barbara City College}{Santa Barbara, CA}
+      {Associate of Science in Computer Science, Associate of Arts in Mathematics}{Sep. 2022 -- May 2024}
+      \resumeItemListStart
+        \resumeItem{\textbf{3.84 GPA}, Top 5\% of class. Honoree of SBCC Foundation, \textbf{Presidents Honor Roll} Fall 2023 \& Spring 2024; Holmes CS Scholarship Recipient; PTK Honor's Society Member; Competitive Programming Club Project Manager}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{PII Virtualization: Reconciling Data Privacy and Tool-Calling Utility in LLM Agents}}{2026}
+        \resumeItemListStart
+          \resumeItem{\emph{Sole author; IEEE-format manuscript, under review.} Reversible session-scoped tokenization mechanism for LLM tool-calling agents: two-stage regex detection, SHA-256 + Fernet-encrypted vault, \textbf{fail-closed leak guard}. Evaluated on a live production deployment: \textbf{zero tool-call degradation with zero raw PII exposure} to the external model provider -- a working \textbf{LLM output containment} mechanism demonstrated under real operating conditions}
+        \resumeItemListEnd
+    \resumeProjectHeading
+        {\textbf{Agentic AI for Autonomous Cyber Defense: Architecture, Threat Modeling \& Evaluation}}{2026}
+        \resumeItemListStart
+          \resumeItem{\emph{Co-author with Abdolee, R. \& Vakilian, V.; IEEE-format manuscript in preparation.} Formalized agentic cybersecurity agents as \textbf{constrained POMDPs}; structured \textbf{adversarial threat model}; \textbf{NIST CSF-aligned} staged-autonomy taxonomy; evaluated on LANL auth/DNS/flows telemetry}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Undergraduate Research Assistant (Paid)}{Jan. 2026 -- May 2026}
+      {CSU Channel Islands -- Department of Computer Science}{Camarillo, CA, under Profs. Abdolee \& Vakilian}
+      \resumeItemListStart
+        \resumeItem{Addressed \textbf{LLM output containment} and \textbf{adversarial robustness} gaps in production agentic systems by producing two IEEE-format papers spanning experimental design, formal modeling, and applied safety evaluation}
+        \resumeItem{Solved raw-PII exfiltration to external model providers by sole-authoring the \textbf{PII Virtualization} paper -- designed the mechanism, ran the experimental protocol against a live deployment, wrote the paper end-to-end}
+        \resumeItem{Tackled agentic-safety formalism by co-authoring \textbf{ACDS}; owned engineering framing of the POMDP formulation, the adversarial threat taxonomy, and the LANL telemetry evaluation. Defended design trade-offs in weekly research syncs}
+        \resumeItem{Research interests: adversarial robustness of LLM tool-calling, \textbf{capability containment}, safety-constrained evaluation, \textbf{AI control}}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Founder \& Sole Engineer}{2025 -- Present}
+      {Traciora -- AI Customer Operations Platform}{Remote}
+      \resumeItemListStart
+        \resumeItem{Built an AI platform that runs the operational side of a live automotive business -- analyzing every customer phone call, handling routine customer operations, and answering from a complete, always-current picture of the company}
+        \resumeItem{Architected a \textbf{custom agentic AI harness} (on \textbf{LangChain + LangGraph's deepagent framework}) with \textbf{47 tools across 11 categories}, role-based capability gating, and a rule+LLM \textbf{GuardrailAgent} for input/output screening with a complete audit trail}
+        \resumeItem{Built a \textbf{daily ensemble speech-to-text pipeline} orchestrating four HuggingFace-sourced neural STT models (Faster-Whisper, OpenAI Whisper, GigaAM, Yandex) with \textbf{two-stage LLM transcription restoration}, turning ignored call recordings into per-call recommendations and a rolled-up manager report}
+        \resumeItem{Shipped a \textbf{reversible session-scoped PII tokenization layer} (SHA-256 + Fernet + fail-closed leak guard); reduced raw PII exposure to the external LLM provider from \textbf{100\% to 0\%} with zero tool-call degradation -- basis of the sole-authored IEEE manuscript}
+        \resumeItem{Engineered an \textbf{MLOps / observability stack} on Langfuse capturing every tool call, LLM response, and pipeline stage for offline evaluation, regression testing, and adversarial-prompt review}
+        \resumeItem{Stack: Python 3.11, FastAPI, LangChain, LangGraph (deepagent base), FastMCP, React 18 + TypeScript, SQLite, Docker Compose, Caddy, Langfuse, APScheduler}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Data Analytics Specialist}{Mar. 2018 -- Mar. 2022}
+      {LVCH Auto Tech Center}{Camarillo, CA}
+      \resumeItemListStart
+        \resumeItem{Developed a \textbf{machine learning pipeline} for predictive analytics and customer segmentation, enabling data-driven business intelligence and improving conversion rates}
+        \resumeItem{Engineered an \textbf{automated dashboard} with statistical analysis capabilities, providing actionable insights through data visualization and KPI tracking}
+        \resumeItem{Implemented an \textbf{A/B testing framework} and feature engineering for campaign performance, improving marketing spend efficiency and customer acquisition}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Kadabra -- Systematic Trading Framework} $|$ \emph{Conformal Prediction, Time Series, Backtesting}}{2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Built an end-to-end framework for researching and deploying systematic crypto strategies: live execution (Binance / Hyperliquid), a multi-test robustness gate (PBO, Deflated Sharpe, MCPT, walk-forward / out-of-sample), and explicit failure recovery}
+            \resumeItem{Applied \textbf{conformal prediction} over \textbf{100+ signals/minute} across \textbf{1TB+ of financial data}; three strategies cleared the gate and trade live (\textbf{1.5 Sharpe} in research; \textbf{+10.59\% / 1.25 Sharpe} live YTD)}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{AI-Powered Staffing Optimization System} $|$ \emph{Gradient Boosting, Feature Engineering, AWS}}{2024}
+          \resumeItemListStart
+            \resumeItem{Built a predictive AI agent for Cal Poly Pomona dining services; \textbf{1st-place} winning submission at \textbf{US AI Camp} (CSU system / AWS / Cal Poly SLO). 94\% accuracy on synthetic data; projected 5\% labor-cost reduction}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{TradingView Indicators (Pine Script)} $|$ \emph{Signal Processing, Quantitative Features}}{2021 -- Present}
+          \resumeItemListStart
+            \resumeItem{Authored a curated set of trading indicators and market features in \textbf{Pine Script}, published on TradingView and used \textbf{daily by 1000+ traders} for discretionary decisions; several reached the \textbf{TradingView front page}}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Machine Learning \& Deep Learning}{: PyTorch, TensorFlow, Scikit-learn, XGBoost, LightGBM, HuggingFace Transformers, Ensemble Methods, Conformal Prediction, Walkforward \& Out-of-Sample Validation, Experimental Design, Feature Engineering} \\
+     \textbf{LLM / Agent Safety}{: LangChain, LangGraph (deepagent), Tool-Calling Agents, RAG, MCP / FastMCP, GuardrailAgent (input/output screening), PII Detection + Tokenization, Prompt-Injection Defense, Adversarial Threat Modeling, Role-Based Capability Gating} \\
+     \textbf{Quant \& Statistical Modeling}{: Time Series Analysis, Distribution-Free Uncertainty, Backtesting, A/B Testing, Statistical Inference, Regression, Classification} \\
+     \textbf{Programming Languages}{: Python, SQL, JavaScript / TypeScript, R, C++, Bash, Unix/Linux} \\
+     \textbf{Data, MLOps \& Infrastructure}{: Git, Docker + Docker Compose, FastAPI, AWS, Langfuse, JWT, SQLite, APScheduler, CI/CD, ETL Pipelines, Distributed Systems} \\
+     \textbf{Formal Methods \& Writing}{: Constrained POMDPs, NIST Cybersecurity Framework, Staged-Autonomy Taxonomies, Paper Writing (IEEE format), \LaTeX}
+    }}
+ \end{itemize}
+
+
+%-----------ACCOMPLISHMENTS-----------
+\section{Accomplishments}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{AI \& ML Competitions}{: \textbf{1st place US AI Camp} (CSU/AWS), \textbf{1st place crypto forecasting} Kaggle competition, \textbf{42nd place} DRW crypto forecasting Kaggle competition, \textbf{5th place} temperature prediction challenge using conformal prediction methods} \\
+     \textbf{Programming Contests}{: \textbf{1st and 2nd place} International Collegiate Programming Contest (ICPC) regionals, among 2-year colleges} \\
+     \textbf{Recognition}{: Advanced Project Management certification; \textbf{1000+ users} actively using developed trading indicators}
+    }}
+ \end{itemize}
+
+
+\end{document}
