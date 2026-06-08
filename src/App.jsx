@@ -6,6 +6,7 @@ import Highlights from './components/sections/Highlights'
 import Stack from './components/sections/Stack'
 import Beyond from './components/sections/Beyond'
 import Footer from './components/sections/Footer'
+import { Analytics } from '@vercel/analytics/react'
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <Beyond />
       </main>
       <Footer />
+      <Analytics />
     </>
   )
 }
